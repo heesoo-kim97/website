@@ -1,0 +1,207 @@
+/*
+  font family of Open Sans
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  background: #000;
+  /*F6F6F2 #20262E*/
+  color: #4bb0b9;
+  margin: 0;
+  padding-bottom: 50px;
+}
+
+.intro-container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: #000;
+  animation: fadeOut 2s ease-out forwards;
+  animation-delay: 6s;
+}
+
+.video-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-box {
+  width: 1920px;
+  height: 872px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bg-video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  /*
+  animation: remove 2s ease-in-out;
+  animation-delay:6s;*/
+}
+
+.welcome {
+  z-index: 1;
+  font-size: 50px;
+  color: aliceblue;
+  opacity: 0;
+  animation: fadeInOut 4s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeInOut {
+
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+.web-container {
+  z-index: -1;
+  max-width: 1500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.nav {
+  position: fixed;
+  background-color: #222;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav.active {
+  background-color: #fff;
+}
+
+.nav.active a {
+  color: #000;
+}
+
+.nav.active .nav-container {
+  padding: 1px 0;
+}
+
+.nav a.current,
+.nav a:hover {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+.hero {
+  background-image: url(./image/apple-2562204_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: -2;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+.hero h1 {
+  font-size: 46px;
+  margin: -20px 0 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.content h2,
+.content h3 {
+  font-size: 150%;
+  margin: 20px 0;
+}
+
+.content p {
+  color: #555;
+  line-height: 30px;
+  letter-spacing: 1.2px;
+  font-size: 20px;
+}
