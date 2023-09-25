@@ -180,30 +180,75 @@ p {
 
 .workBx .brand {
   position: relative;
-  background-image: url('./assets/image/icon3.png');
+  object-fit: cover;
   min-height: 300px;
   width: 250px;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-size: cover;
+}
+
+.b1 {
+  background-image: url('./assets/image/choropleth.png');
+}
+
+.b2 {
+  background-image: url('./assets/image/realtime.png');
+}
+
+.b3 {
+  background-image: url('./assets/image/wheel.png');
+}
+
+.b4 {
+  background-image: url('./assets/image/calculator.png');
+}
+
+.b5 {
+  background-image: url('./assets/image/gun.png');
 }
 
 .workBx .brand:hover {
   background: #000;
 }
 
-.workBx .brand a {
+.workBx .brand h2 {
   text-decoration: none;
-  color: rgba(255, 255, 255, .4);
+  color: rgba(255, 255, 255, 0);
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 2px;
 }
 
-.workBx .brand:hover a {
+.workBx .brand h2 span {
+  font-size: 12px;
+}
+
+.workBx .brand a {
+  color: rgba(0, 255, 255, 0);
+  font-size: 12px;
+}
+
+.workBx .brand:hover h2 {
+  text-decoration: none;
+  color: #FF7F11;
+}
+
+.workBx .brand:hover h2 span {
   text-decoration: none;
   color: #fff;
+}
+
+.workBx .brand:hover a {
+  text-decoration: underline;
+  color: #fff;
+}
+
+a:hover {
+  color: #ff5500;
 }
 
 .contact {
@@ -453,7 +498,4 @@ p {
     max-width: 24px;
   }
 
-  .workBx .brand {
-    background: #4978ff;
-  }
 }
