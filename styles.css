@@ -180,7 +180,7 @@ p {
 
 .workBx .brand {
   position: relative;
-  background: #4978ff;
+  background-image: url('./assets/image/icon3.png');
   min-height: 300px;
   width: 250px;
   margin: 0 auto;
