@@ -1,18 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles.css">
+  <meta charset="UTF-8">
   <title>HSK Website</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <div id="intro" class="intro-container">
-    <div class="greeting">Hello, I'm Heesoo Kim.</div>
-    <div class="role">I'm a web developer.</div>
-    <div class="mywork-btn">
+  <header id="header">
+    <a href="#" class="logo">HSK</a>
+    <ul>
+      <li><a href="#home" onclick="toggle()">Home</a></li>
+      <li><a href="#about" onclick="toggle()">About</a></li>
+      <li><a href="#skills" onclick="toggle()">Skills</a></li>
+      <li><a href="#projects" onclick="toggle()">Projects</a></li>
+      <li><a href="#contact" onclick="toggle()">Contact</a></li>
+    </ul>
+    <div class="toggle" onclick="toggle()"></div>
+  </header>
+  <section class="banner" id="home">
+    <h2>Hello I'm<br><span>Heesoo Kim</span></h2>
+  </section>
+  <section class="sec about" id="about">
+    <div class="content">
+      <div class="mxw800p">
+        <h3>Who I Am</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a href="#" class="btn">Read My Story</a>
+      </div>
     </div>
-  </div>
-  <script src="./main.js" defer></script>
+  </section>
+
+  <section class="sec about" id="skills">
+    <div class="content">
+      <div class="mxw800p">
+        <h3>What I Do</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi.</p>
+      </div>
+      <div class="skills">
+        <div class="box">
+          <div class="iconBx">
+            <img src="./assets/image/icon1.png">
+          </div>
+          <div class="content">
+            <h2>Design</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et.</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="iconBx">
+            <img src="./assets/image/icon2.png">
+          </div>
+          <div class="content">
+            <h2>Development</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et.</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="iconBx">
+            <img src="./assets/image/icon3.png">
+          </div>
+          <div class="content">
+            <h2>Branding</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec work" id="projects">
+    <div class="content">
+      <div class="mxw800p">
+        <h3>Recent Project</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco.</p>
+      </div>
+      <div class="workBx">
+        <div class="brand">
+          <a href="#">
+            <h2>Brand Name</h2>
+          </a>
+        </div>
+        <div class="brand">
+          <a href="#">
+            <h2>Brand Name</h2>
+          </a>
+        </div>
+        <div class="brand">
+          <a href="#">
+            <h2>Brand Name</h2>
+          </a>
+        </div>
+        <div class="brand">
+          <a href="#">
+            <h2>Brand Name</h2>
+          </a>
+        </div>
+        <div class="brand">
+          <a href="#">
+            <h2>Brand Name</h2>
+          </a>
+        </div>
+        <div class="brand">
+          <a href="#">
+            <h2>Brand Name</h2>
+          </a>
+        </div>
+        <div class="brand">
+          <a href="#">
+            <h2>Brand Name</h2>
+          </a>
+        </div>
+        <div class="brand">
+          <a href="#">
+            <h2>Brand Name</h2>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sec contact" id="contact">
+    <div class="content">
+      <div class="mxw800p">
+        <h3>Send Me A Message</h3>
+        <p>I would love to connect with you!</p>
+      </div>
+      <div class="conactForm">
+        <form>
+          <div class="row100">
+            <div class="inputBx50">
+              <input type="text" name="" placeholder="Full Name">
+            </div>
+            <div class="inputBx50">
+              <input type="text" name="" placeholder="Email Address">
+            </div>
+          </div>
+          <div class="row100">
+            <div class="inputBx100">
+              <textarea placeholder="Message"></textarea>
+            </div>
+          </div>
+          <div class="row100">
+            <div class="inputBx100">
+              <input type="submit" value="Send" name="">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="sci">
+        <ul>
+          <li><a href="#"><img src="facebook.png"></a></li>
+          <li><a href="#"><img src="twitter.png"></a></li>
+          <li><a href="#"><img src="linkedin.png"></a></li>
+        </ul>
+      </div>
+      <p class="copyright">Design & Developed By <a href="#">Heesoo Kim</a></p>
+    </div>
+  </section>
+  <script src="./main.js"></script>
 </body>
+
 </html>
